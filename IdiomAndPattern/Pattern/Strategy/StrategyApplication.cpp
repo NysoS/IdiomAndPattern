@@ -12,7 +12,7 @@
 void StrategyApplication::execute()
 {
 	StrategyContext context;
-	StrategyActionType currentActionType = StrategyActionType::Visa;
+	StrategyActionType currentActionType{};
 
 	for (int i = 0; i < 3; ++i)
 	{
