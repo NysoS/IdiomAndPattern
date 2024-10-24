@@ -1,9 +1,8 @@
 #include "StrategyApplication.h"
-#include "StrategyContext.h"
-#include "StrategyActionType.h"
-#include "VisaStrategy.h"
-#include "PaypalStrategy.h"
-#include "CryptoStrategy.h"
+#include "ContextAbilities.h"
+#include "PowerUpStrategy.h"
+#include "SuperStarStrategy.h"
+#include "FireBallStrategy.h"
 
 #include <memory>
 #include <stdexcept>
@@ -11,25 +10,40 @@
 
 void StrategyApplication::execute()
 {
-	StrategyContext context;
-	StrategyActionType currentActionType{};
+	using Mario = ContextAbilities;
+	Mario mario;
 
-	for (int i = 0; i < 3; ++i)
-	{
-		if (currentActionType == StrategyActionType::Visa)
-		{
-			context.setStrategy(new VisaStrategy());
-		}
-		else if (currentActionType == StrategyActionType::Paypal)
-		{
-			context.setStrategy(new PaypalStrategy());
-		}
-		else if (currentActionType == StrategyActionType::Crypto)
-		{
-			context.setStrategy(new CryptoStrategy());
-		}
+	std::cout << "Mario with no abilities \n" << std::endl;
+	mario.jump();
+	mario.fight();
+	std::cout << "\n ---- \n" << std::endl;
 
-		context.executeStrategy();
-		currentActionType = StrategyActionType(currentActionType + 1);
-	}
+	//Mario catch powerUp//
+	std::cout << "Mario catch powerUp \n" << std::endl;
+	mario.setJumpStrategy(new PowerUpStrategy());
+	mario.jump();
+	mario.fight();
+	std::cout << "\n ---- \n" << std::endl;
+
+	//Mario catch fireBall Flower//
+	std::cout << "Mario catch fireball Flower \n" << std::endl;
+	mario.setFightStrategy(new FireBallStrategy());
+	mario.jump();
+	mario.fight();
+	std::cout << "\n ---- \n" << std::endl;
+
+	//Mario hit by enemy//
+	std::cout << "Mario hit by enemy \n" << std::endl;
+	mario.setFightStrategy(nullptr);
+	mario.setJumpStrategy(nullptr);
+	mario.jump();
+	mario.fight();
+	std::cout << "\n ---- \n" << std::endl;
+
+	//Mario catch superStar//
+	std::cout << "Mario catch superStar \n" << std::endl;
+	mario.setFightStrategy(new SuperStarStrategy());
+	mario.jump();
+	mario.fight();
+	std::cout << "\n ---- \n" << std::endl;
 }

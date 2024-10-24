@@ -141,21 +141,21 @@
   <ItemGroup>
     <ClCompile Include="CoreApplication.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Pattern\Strategy\CryptoStrategy.cpp" />
-    <ClCompile Include="Pattern\Strategy\PaypalStrategy.cpp" />
+    <ClCompile Include="Pattern\Strategy\ContextAbilities.cpp" />
+    <ClCompile Include="Pattern\Strategy\FireBallStrategy.cpp" />
+    <ClCompile Include="Pattern\Strategy\PowerUpStrategy.cpp" />
     <ClCompile Include="Pattern\Strategy\StrategyApplication.cpp" />
-    <ClCompile Include="Pattern\Strategy\StrategyContext.cpp" />
-    <ClCompile Include="Pattern\Strategy\VisaStrategy.cpp" />
+    <ClCompile Include="Pattern\Strategy\SuperStarStrategy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CoreApplication.h" />
-    <ClInclude Include="Pattern\Strategy\CryptoStrategy.h" />
-    <ClInclude Include="Pattern\Strategy\IStrategy.h" />
-    <ClInclude Include="Pattern\Strategy\PaypalStrategy.h" />
-    <ClInclude Include="Pattern\Strategy\StrategyActionType.h" />
+    <ClInclude Include="Pattern\Strategy\ContextAbilities.h" />
+    <ClInclude Include="Pattern\Strategy\FireBallStrategy.h" />
+    <ClInclude Include="Pattern\Strategy\IFightStrategy.h" />
+    <ClInclude Include="Pattern\Strategy\IJumpStrategy.h" />
+    <ClInclude Include="Pattern\Strategy\PowerUpStrategy.h" />
     <ClInclude Include="Pattern\Strategy\StrategyApplication.h" />
-    <ClInclude Include="Pattern\Strategy\StrategyContext.h" />
-    <ClInclude Include="Pattern\Strategy\VisaStrategy.h" />
+    <ClInclude Include="Pattern\Strategy\SuperStarStrategy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
