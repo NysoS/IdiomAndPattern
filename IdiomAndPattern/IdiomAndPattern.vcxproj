@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="CoreApplication.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pattern\ModernStrategy\BaseCharacter.cpp" />
+    <ClCompile Include="Pattern\ModernStrategy\Character.cpp" />
+    <ClCompile Include="Pattern\ModernStrategy\ModernStrategyApplication.cpp" />
     <ClCompile Include="Pattern\Strategy\ContextAbilities.cpp" />
     <ClCompile Include="Pattern\Strategy\FireBallStrategy.cpp" />
     <ClCompile Include="Pattern\Strategy\PowerUpStrategy.cpp" />
@@ -149,6 +152,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CoreApplication.h" />
+    <ClInclude Include="Pattern\ModernStrategy\BaseCharacter.h" />
+    <ClInclude Include="Pattern\ModernStrategy\Character.h" />
+    <ClInclude Include="Pattern\ModernStrategy\MordernStrategyApplication.h" />
+    <ClInclude Include="Pattern\ModernStrategy\StrategyGenerated.h" />
     <ClInclude Include="Pattern\Strategy\ContextAbilities.h" />
     <ClInclude Include="Pattern\Strategy\FireBallStrategy.h" />
     <ClInclude Include="Pattern\Strategy\IFightStrategy.h" />

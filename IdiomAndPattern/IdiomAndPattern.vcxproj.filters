@@ -8,6 +8,9 @@
     <ClCompile Include="Pattern\Strategy\PowerUpStrategy.cpp" />
     <ClCompile Include="Pattern\Strategy\FireBallStrategy.cpp" />
     <ClCompile Include="Pattern\Strategy\SuperStarStrategy.cpp" />
+    <ClCompile Include="Pattern\ModernStrategy\ModernStrategyApplication.cpp" />
+    <ClCompile Include="Pattern\ModernStrategy\BaseCharacter.cpp" />
+    <ClCompile Include="Pattern\ModernStrategy\Character.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CoreApplication.h" />
@@ -18,5 +21,9 @@
     <ClInclude Include="Pattern\Strategy\PowerUpStrategy.h" />
     <ClInclude Include="Pattern\Strategy\FireBallStrategy.h" />
     <ClInclude Include="Pattern\Strategy\SuperStarStrategy.h" />
+    <ClInclude Include="Pattern\ModernStrategy\MordernStrategyApplication.h" />
+    <ClInclude Include="Pattern\ModernStrategy\StrategyGenerated.h" />
+    <ClInclude Include="Pattern\ModernStrategy\BaseCharacter.h" />
+    <ClInclude Include="Pattern\ModernStrategy\Character.h" />
   </ItemGroup>
 </Project>
